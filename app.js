@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 app.use('/api/users', userRoutes);
 app.use('/services', servicesRouter);
 app.use('/bookings', bookingsRouter);
-app.use('/api/users/profile', userRoutes);
+// app.use('/api/users/profile', userRoutes);
 
 // Confirmation route
 

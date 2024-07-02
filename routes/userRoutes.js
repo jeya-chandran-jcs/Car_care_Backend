@@ -12,11 +12,11 @@ router.get('/List',userController.getUserList);
 
 router.post('/signin', userController.signin);
 
-router.get('/get', authMiddleware.verifyToken, 
+router.get('/get-profile', authMiddleware.verifyToken, 
 userController.getProfile);
-router.put('/edit', authMiddleware.verifyToken, 
+router.put('/edit-profile', authMiddleware.verifyToken, 
 userController.editProfile);
-router.delete('/delete', authMiddleware.verifyToken, 
+router.delete('/delete-profile', authMiddleware.verifyToken, 
 userController.deleteProfile);
 
 
